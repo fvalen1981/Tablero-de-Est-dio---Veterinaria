@@ -212,20 +212,43 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);display:flex
 
     <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
       <div style="width:72px;height:72px;border-radius:18px;background:#1D9E75;display:flex;align-items:center;justify-content:center">
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:52px;height:52px">
-          <ellipse cx="32" cy="38" rx="16" ry="14" fill="#fff"/>
-          <ellipse cx="32" cy="28" rx="13" ry="12" fill="#fff"/>
-          <ellipse cx="21" cy="18" rx="6" ry="9" fill="#fff" transform="rotate(-20 21 18)"/>
-          <ellipse cx="43" cy="18" rx="6" ry="9" fill="#fff" transform="rotate(20 43 18)"/>
-          <ellipse cx="21" cy="18" rx="3.5" ry="5.5" fill="#9FE1CB" transform="rotate(-20 21 18)"/>
-          <ellipse cx="43" cy="18" rx="3.5" ry="5.5" fill="#9FE1CB" transform="rotate(20 43 18)"/>
-          <ellipse cx="27" cy="29" rx="3" ry="2.2" fill="#085041"/>
-          <ellipse cx="37" cy="29" rx="3" ry="2.2" fill="#085041"/>
-          <ellipse cx="27" cy="28" rx="1.2" ry="1.2" fill="#fff"/>
-          <ellipse cx="37" cy="28" rx="1.2" ry="1.2" fill="#fff"/>
-          <ellipse cx="32" cy="34" rx="4" ry="3" fill="#9FE1CB"/>
-          <ellipse cx="32" cy="35.5" rx="2.5" ry="1.8" fill="#5DCAA5"/>
-          <path d="M27 38 Q32 43 37 38" stroke="#085041" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:62px;height:62px">
+          <!-- ears -->
+          <ellipse cx="18" cy="30" rx="11" ry="13" fill="#C8A878" transform="rotate(-10 18 30)"/>
+          <ellipse cx="62" cy="30" rx="11" ry="13" fill="#C8A878" transform="rotate(10 62 30)"/>
+          <ellipse cx="18" cy="30" rx="7" ry="9" fill="#A0784A" transform="rotate(-10 18 30)"/>
+          <ellipse cx="62" cy="30" rx="7" ry="9" fill="#A0784A" transform="rotate(10 62 30)"/>
+          <!-- head -->
+          <ellipse cx="40" cy="38" rx="26" ry="24" fill="#E8C98A"/>
+          <!-- forehead wrinkles -->
+          <path d="M32 20 Q40 17 48 20" stroke="#C8A060" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M34 23 Q40 21 46 23" stroke="#C8A060" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <!-- eye area (darker) -->
+          <ellipse cx="28" cy="33" rx="8" ry="7" fill="#D4A870"/>
+          <ellipse cx="52" cy="33" rx="8" ry="7" fill="#D4A870"/>
+          <!-- eyes -->
+          <circle cx="28" cy="33" r="6" fill="#1A0A00"/>
+          <circle cx="52" cy="33" r="6" fill="#1A0A00"/>
+          <circle cx="30" cy="31" r="2" fill="#fff"/>
+          <circle cx="54" cy="31" r="2" fill="#fff"/>
+          <circle cx="26" cy="34" r="1" fill="#fff" opacity="0.5"/>
+          <circle cx="50" cy="34" r="1" fill="#fff" opacity="0.5"/>
+          <!-- snout / muzzle -->
+          <ellipse cx="40" cy="46" rx="13" ry="10" fill="#D4A870"/>
+          <!-- nose -->
+          <ellipse cx="40" cy="42" rx="7" ry="5" fill="#1A0A00"/>
+          <ellipse cx="38" cy="41" rx="2" ry="1.5" fill="#3D3030" opacity="0.6"/>
+          <ellipse cx="42" cy="41" rx="2" ry="1.5" fill="#3D3030" opacity="0.6"/>
+          <!-- nostrils -->
+          <ellipse cx="37" cy="43" rx="1.8" ry="1.2" fill="#0A0000"/>
+          <ellipse cx="43" cy="43" rx="1.8" ry="1.2" fill="#0A0000"/>
+          <!-- mouth -->
+          <path d="M33 51 Q40 56 47 51" stroke="#A07840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <!-- tongue -->
+          <ellipse cx="40" cy="56" rx="5" ry="4" fill="#E8748A"/>
+          <path d="M35 55 Q40 60 45 55" stroke="#E8748A" stroke-width="0.5" fill="#E8748A"/>
+          <!-- chin wrinkle -->
+          <path d="M30 49 Q40 53 50 49" stroke="#C8A060" stroke-width="1" fill="none" stroke-linecap="round"/>
         </svg>
       </div>
       <div style="text-align:center">
@@ -264,22 +287,29 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);display:flex
 <header class="hdr">
   <button class="mob-toggle" onclick="toggleMob()" aria-label="Menú">☰</button>
   <div class="hdr-icon" style="width:36px;height:36px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
-    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:30px;height:30px">
-      <ellipse cx="32" cy="38" rx="16" ry="14" fill="#fff"/>
-      <ellipse cx="32" cy="28" rx="13" ry="12" fill="#fff"/>
-      <ellipse cx="21" cy="18" rx="6" ry="9" fill="#fff" transform="rotate(-20 21 18)"/>
-      <ellipse cx="43" cy="18" rx="6" ry="9" fill="#fff" transform="rotate(20 43 18)"/>
-      <ellipse cx="21" cy="18" rx="3.5" ry="5.5" fill="#9FE1CB" transform="rotate(-20 21 18)"/>
-      <ellipse cx="43" cy="18" rx="3.5" ry="5.5" fill="#9FE1CB" transform="rotate(20 43 18)"/>
-      <ellipse cx="27" cy="29" rx="3" ry="2.2" fill="#085041"/>
-      <ellipse cx="37" cy="29" rx="3" ry="2.2" fill="#085041"/>
-      <ellipse cx="27" cy="28" rx="1.2" ry="1.2" fill="#fff"/>
-      <ellipse cx="37" cy="28" rx="1.2" ry="1.2" fill="#fff"/>
-      <ellipse cx="32" cy="34" rx="4" ry="3" fill="#9FE1CB"/>
-      <ellipse cx="32" cy="35.5" rx="2.5" ry="1.8" fill="#5DCAA5"/>
-      <path d="M27 38 Q32 43 37 38" stroke="#085041" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <ellipse cx="22" cy="47" rx="4" ry="3" fill="#E1F5EE" stroke="#9FE1CB" stroke-width="0.5"/>
-      <ellipse cx="42" cy="47" rx="4" ry="3" fill="#E1F5EE" stroke="#9FE1CB" stroke-width="0.5"/>
+    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:30px;height:30px">
+      <ellipse cx="18" cy="30" rx="11" ry="13" fill="#C8A878" transform="rotate(-10 18 30)"/>
+      <ellipse cx="62" cy="30" rx="11" ry="13" fill="#C8A878" transform="rotate(10 62 30)"/>
+      <ellipse cx="18" cy="30" rx="7" ry="9" fill="#A0784A" transform="rotate(-10 18 30)"/>
+      <ellipse cx="62" cy="30" rx="7" ry="9" fill="#A0784A" transform="rotate(10 62 30)"/>
+      <ellipse cx="40" cy="38" rx="26" ry="24" fill="#E8C98A"/>
+      <path d="M32 20 Q40 17 48 20" stroke="#C8A060" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M34 23 Q40 21 46 23" stroke="#C8A060" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="28" cy="33" rx="8" ry="7" fill="#D4A870"/>
+      <ellipse cx="52" cy="33" rx="8" ry="7" fill="#D4A870"/>
+      <circle cx="28" cy="33" r="6" fill="#1A0A00"/>
+      <circle cx="52" cy="33" r="6" fill="#1A0A00"/>
+      <circle cx="30" cy="31" r="2" fill="#fff"/>
+      <circle cx="54" cy="31" r="2" fill="#fff"/>
+      <circle cx="26" cy="34" r="1" fill="#fff" opacity="0.5"/>
+      <circle cx="50" cy="34" r="1" fill="#fff" opacity="0.5"/>
+      <ellipse cx="40" cy="46" rx="13" ry="10" fill="#D4A870"/>
+      <ellipse cx="40" cy="42" rx="7" ry="5" fill="#1A0A00"/>
+      <ellipse cx="37" cy="43" rx="1.8" ry="1.2" fill="#0A0000"/>
+      <ellipse cx="43" cy="43" rx="1.8" ry="1.2" fill="#0A0000"/>
+      <path d="M33 51 Q40 56 47 51" stroke="#A07840" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="40" cy="56" rx="5" ry="4" fill="#E8748A"/>
+      <path d="M30 49 Q40 53 50 49" stroke="#C8A060" stroke-width="1" fill="none" stroke-linecap="round"/>
     </svg>
   </div>
   <h1 class="hdr-title">Veterinaria</h1>
@@ -775,6 +805,7 @@ function renderPanel(){
       <button class="tab${S.tab==='flashcards'?' active':''}" onclick="swTab('flashcards',this)">🃏 Flashcards</button>
       <button class="tab${S.tab==='ejercicios'?' active':''}" onclick="swTab('ejercicios',this)">✏️ Ejercicios</button>
       <button class="tab${S.tab==='quiz'?' active':''}" onclick="swTab('quiz',this)">🧩 Quiz</button>
+      <button class="tab${S.tab==='examen'?' active':''}" onclick="swTab('examen',this)" style="font-weight:500;color:${S.tab==='examen'?'var(--gd)':'#D85A30'}">📋 Examen</button>
     </div>
     <div id="tab-content"></div>`;
   renderTab();
@@ -806,6 +837,7 @@ function renderTab(){
   else if(t==='flashcards') renderFlash(c,u);
   else if(t==='ejercicios') renderEjercicios(c,u);
   else if(t==='quiz') renderQuiz(c,u);
+  else if(t==='examen') renderExamen(c,u);
 }
 
 // ── RESUMEN ──
@@ -1669,6 +1701,297 @@ function checkResp(){
   }
 }
 function clearResp(){ const t=document.getElementById('ej1'); if(t)t.value=''; const fb=document.getElementById('resp-feedback'); if(fb)fb.innerHTML=''; }
+
+// ── EXAMEN FINAL 50 PREGUNTAS ──
+const EXAMEN = {
+  titulo: "Examen Final — Biología Celular",
+  subtitulo: "Veterinaria · Universidad Columbia del Paraguay · Prof. Mario Méndez",
+  instrucciones: "Este examen consta de 50 preguntas que abarcan todas las unidades de la materia. Parte A: 35 preguntas de múltiple opción (1 punto cada una). Parte B: 15 preguntas de desarrollo (2 puntos cada una). Puntaje total: 65 puntos.",
+  multiple: [
+    // UNIDAD I
+    { u:"I", q:"¿A qué reino pertenecen los virus según la clasificación de los 6 reinos?", opts:["Eubacteria","Protista","A ningún reino — son partículas abióticas","Archaebacteria"], ans:2, exp:"Los virus son partículas abióticas: carecen de metabolismo propio y no se asignan a ningún reino. Solo 'cobran vida' al infectar células huésped." },
+    { u:"I", q:"¿Cuál de estas opciones NO es una característica de los seres vivos?", opts:["Homeostasis","Reproducción","Metabolismo independiente","Carecer de material genético propio"], ans:3, exp:"Todos los seres vivos poseen material genético (ADN/ARN). Los virus carecen de capacidad metabólica autónoma, lo que los convierte en abióticos." },
+    { u:"I", q:"¿Qué científico realizó la primera clonación exitosa de un mamífero adulto en 1997?", opts:["Charles Darwin","Watson y Crick","Ian Wilmut","Gregor Mendel"], ans:2, exp:"Ian Wilmut clonó la oveja Dolly en 1997 mediante transferencia nuclear de célula somática adulta, primer mamífero clonado exitosamente." },
+    { u:"I", q:"En la jerarquía biológica, ¿qué nivel sigue inmediatamente después de 'célula'?", opts:["Molécula","Órgano","Tejido","Organismo"], ans:2, exp:"La jerarquía es: orgánulo → célula → TEJIDO → órgano → sistema → organismo. El tejido es un conjunto de células del mismo tipo con función común." },
+    { u:"I", q:"¿Cuál es el sistema de nomenclatura universal para nombrar organismos?", opts:["Sistema decimal de Dewey","Nomenclatura binomial de Linneo","Clasificación de Darwin","Sistema de los 3 dominios"], ans:1, exp:"El sistema binomial de Linneo usa dos palabras latinas: Género (mayúscula) + especie (minúscula), en cursiva. Ej: Canis lupus familiaris." },
+    // UNIDAD II
+    { u:"II", q:"¿Cuál es el polisacárido de reserva energética en animales?", opts:["Almidón","Celulosa","Glucógeno","Quitina"], ans:2, exp:"El glucógeno es el polisacárido de almacenamiento en animales (hígado y músculo). Las plantas almacenan almidón. Ambos son polímeros de glucosa pero con diferente estructura." },
+    { u:"II", q:"¿Cuál de estas NO es una función de los lípidos?", opts:["Componente de la membrana celular","Almacenamiento energético a largo plazo","Síntesis de hormonas esteroideas","Transmisión de la información genética"], ans:3, exp:"La transmisión de información genética es función de los ácidos nucleicos (ADN/ARN). Los lípidos cumplen funciones estructurales, energéticas y de señalización hormonal." },
+    { u:"II", q:"¿Qué son los amortiguadores o buffers?", opts:["Proteínas que transportan O₂","Sustancias que resisten cambios de pH","Enzimas que aceleran reacciones","Lípidos de membrana"], ans:1, exp:"Los buffers resisten cambios de pH al agregar ácidos o bases. El bicarbonato es el principal buffer sanguíneo en mamíferos. El Prof. Méndez usa el Alka-Seltzer como ejemplo." },
+    { u:"II", q:"Una enzima que pierde su estructura tridimensional por exceso de calor se dice que:", opts:["Se activa","Se desnaturaliza","Se duplica","Se fosforila"], ans:1, exp:"La desnaturalización es la pérdida de la estructura 3D de una proteína. Como estructura = función, la enzima pierde su actividad catalítica. Generalmente es irreversible." },
+    { u:"II", q:"¿Cuál es la función del ATP en las células?", opts:["Almacenar información genética","Transportar O₂ en sangre","Transferir energía entre reacciones metabólicas","Formar la estructura de la membrana"], ans:2, exp:"El ATP (adenosín trifosfato) es la principal moneda de transferencia de energía. La hidrólisis de su tercer fosfato libera ~7.3 kcal/mol para impulsar reacciones endergónicas." },
+    // UNIDAD III
+    { u:"III", q:"¿Cuál organelo es exclusivo de la célula vegetal y NO está en la célula animal?", opts:["Mitocondria","Aparato de Golgi","Cloroplasto","Ribosomas"], ans:2, exp:"El cloroplasto es exclusivo de células vegetales y algas. Junto con la pared celular de celulosa y la vacuola central, son las estructuras que diferencian a las células vegetales." },
+    { u:"III", q:"¿Dónde se sintetizan las proteínas destinadas a la exportación celular?", opts:["Núcleo","Ribosomas del RE rugoso","RE liso","Aparato de Golgi"], ans:1, exp:"Los ribosomas del RE rugoso sintetizan proteínas secretadas o de membrana. Las proteínas ingresan al lumen del RE para plegarse, luego pasan al Golgi para procesarse y ser enviadas." },
+    { u:"III", q:"¿Cuál es la función principal del Aparato de Golgi?", opts:["Sintetizar ATP","Almacenar el ADN","Procesar y distribuir proteínas y lípidos a sus destinos","Realizar la respiración celular"], ans:2, exp:"El Golgi recibe vesículas del RE, modifica las proteínas (glicosilación), las clasifica y las envía a su destino: lisosomas, membrana plasmática o secreción." },
+    { u:"III", q:"¿Qué organelo posee ADN circular propio y ribosomas 70S como evidencia de su origen endosimbiótico?", opts:["Núcleo","Aparato de Golgi","Lisosoma","Mitocondria"], ans:3, exp:"La mitocondria tiene ADN circular, ribosomas 70S y se divide por fisión binaria, evidencias de que ancestralmente fue una α-proteobacteria engullida por una célula eucariota." },
+    { u:"III", q:"¿Cuál es la función del RE liso?", opts:["Síntesis de proteínas de exportación","Síntesis de lípidos y detoxificación","Digestión intracelular","Producción de energía"], ans:1, exp:"El RE liso carece de ribosomas. Sintetiza fosfolípidos y esteroides, detoxifica drogas y venenos (citocromo P450 en hígado) y almacena Ca²⁺ en músculo." },
+    // UNIDAD IV
+    { u:"IV", q:"¿Qué modelo describe la estructura de la membrana plasmática?", opts:["Modelo de la doble hélice","Modelo del mosaico fluido","Modelo de Bohr","Modelo de Watson-Crick"], ans:1, exp:"El modelo del mosaico fluido (Singer & Nicolson, 1972) describe la membrana como una bicapa lipídica fluida con proteínas integrales y periféricas que se mueven lateralmente." },
+    { u:"IV", q:"Una célula animal colocada en solución hipotónica. ¿Qué ocurre?", opts:["Pierde agua y se encoge","Gana agua y puede lisar","No hay cambio de volumen","Pierde iones y se encoge"], ans:1, exp:"En solución hipotónica (menos solutos afuera), el agua entra a la célula por ósmosis. La célula se hincha y puede lisar (hemólisis en eritrocitos si la solución es muy diluida)." },
+    { u:"IV", q:"¿Cuál transporte mueve solutos CONTRA su gradiente usando ATP directamente?", opts:["Difusión simple","Ósmosis","Difusión facilitada","Transporte activo primario"], ans:3, exp:"El transporte activo primario (ej: bomba Na⁺/K⁺ ATPasa) usa ATP directamente para mover solutos contra su gradiente. Es fundamental para el potencial de membrana." },
+    { u:"IV", q:"¿Qué tipo de unión celular permite la comunicación directa entre células cardíacas permitiendo la contracción sincrónica?", opts:["Unión estrecha","Desmosoma","Unión de hendidura (gap junction)","Hemidesmosoma"], ans:2, exp:"Las uniones de hendidura (gap junctions) son canales de conexinas que conectan directamente los citoplasmas de células adyacentes, permitiendo el paso de iones y señales eléctricas." },
+    { u:"IV", q:"¿Qué proceso utilizan los macrófagos para engullir bacterias?", opts:["Exocitosis","Pinocitosis","Fagocitosis","Difusión facilitada"], ans:2, exp:"La fagocitosis es la endocitosis de partículas sólidas grandes (bacterias, células muertas). Los macrófagos y neutrófilos extienden pseudópodos de actina para rodear y engullir el patógeno." },
+    // UNIDAD V
+    { u:"V", q:"¿Qué proceso metabólico DEGRADA moléculas complejas liberando energía?", opts:["Anabolismo","Catabolismo","Transcripción","Replicación"], ans:1, exp:"El catabolismo es la degradación de moléculas complejas en simples, liberando energía (reacciones exergónicas). Ej: glucólisis y respiración celular." },
+    { u:"V", q:"La síntesis de proteínas (traducción ribosomal) es un proceso:", opts:["Catabólico que libera ATP","Anabólico que consume ATP","Catabólico que consume glucosa","Ninguna de las anteriores"], ans:1, exp:"La síntesis de proteínas es anabólica (construye moléculas complejas a partir de aminoácidos) y endergónica (consume ATP para formar cada enlace peptídico)." },
+    { u:"V", q:"¿Qué tipo de enzima cataliza reacciones de oxidación-reducción?", opts:["Hidrolasa","Transferasa","Oxidoreductasa","Isomerasa"], ans:2, exp:"Las oxidoreductasas catalizan transferencia de electrones (redox). Ejemplo fundamental: NADH deshidrogenasa (complejo I) en la cadena respiratoria mitocondrial." },
+    { u:"V", q:"Un inhibidor que compite con el sustrato por el centro activo de la enzima se denomina:", opts:["Inhibidor alostérico","Inhibidor no competitivo","Inhibidor competitivo","Cofactor"], ans:2, exp:"El inhibidor competitivo es análogo al sustrato y compite por el centro activo. Aumenta la Km aparente sin cambiar la Vmax. Se puede superar aumentando la concentración de sustrato." },
+    // UNIDAD VI
+    { u:"VI", q:"¿En qué parte de la célula ocurre la glucólisis?", opts:["Matriz mitocondrial","Membrana interna mitocondrial","Citosol","Núcleo"], ans:2, exp:"La glucólisis ocurre en el CITOSOL. Es la única fase del catabolismo de glucosa que ocurre fuera de la mitocondria. Produce 2 ATP netos y 2 NADH por glucosa." },
+    { u:"VI", q:"¿Cuántos ATP netos produce la glucólisis por molécula de glucosa?", opts:["38 ATP","4 ATP","2 ATP","32 ATP"], ans:2, exp:"La glucólisis produce 2 ATP netos (produce 4 pero consume 2 en la fase de inversión). El resto del ATP se produce en el ciclo de Krebs y la cadena respiratoria." },
+    { u:"VI", q:"¿Dónde se ubican los complejos I-IV de la cadena respiratoria?", opts:["Citosol","Matriz mitocondrial","Membrana interna mitocondrial (crestas)","Membrana externa mitocondrial"], ans:2, exp:"Los complejos I-IV están embebidos en la membrana interna (crestas) de la mitocondria. Bombean H⁺ al espacio intermembrana generando el gradiente para la ATP sintasa." },
+    { u:"VI", q:"Un animal realiza ejercicio intenso sin suficiente O₂. ¿Qué compuesto se acumula en sus músculos?", opts:["CO₂","Etanol","Lactato","Glucógeno"], ans:2, exp:"En fermentación láctica (sin O₂), el piruvato se convierte en lactato por la lactato deshidrogenasa. La acumulación de lactato baja el pH muscular causando fatiga y dolor." },
+    { u:"VI", q:"¿Cuál es el balance energético aproximado de la respiración aeróbica completa?", opts:["2 ATP","10 ATP","30-32 ATP","100 ATP"], ans:2, exp:"La respiración aeróbica produce ~30-32 ATP por glucosa (valores modernos): glucólisis (2) + ciclo de Krebs (2) + cadena respiratoria (~26-28). Mucho más eficiente que la anaeróbica (2 ATP)." },
+    // UNIDAD VII
+    { u:"VII", q:"¿Dónde ocurre la fase luminosa de la fotosíntesis?", opts:["Estroma del cloroplasto","Citosol","Tilacoides del cloroplasto","Matriz mitocondrial"], ans:2, exp:"La fase luminosa ocurre en las membranas tilacoidales del cloroplasto, donde está la clorofila. Produce ATP, NADPH y libera O₂ por fotólisis del agua." },
+    { u:"VII", q:"¿Qué gas se libera como subproducto de la fotosíntesis?", opts:["CO₂","N₂","H₂","O₂"], ans:3, exp:"El O₂ se libera en la fase luminosa cuando el agua es oxidada (fotólisis) para reponer los electrones de la clorofila excitada: 2H₂O → 4H⁺ + 4e⁻ + O₂." },
+    { u:"VII", q:"¿Qué enzima fija el CO₂ en el ciclo de Calvin?", opts:["ATP sintasa","Hexoquinasa","RuBisCO","Piruvato quinasa"], ans:2, exp:"La RuBisCO (ribulosa-1,5-bisfosfato carboxilasa/oxigenasa) es la enzima que fija CO₂ en la ribulosa-1,5-bisfosfato. Es la proteína más abundante de la Tierra." },
+    // UNIDAD VIII
+    { u:"VIII", q:"¿En qué fase del ciclo celular se replica el ADN?", opts:["G1","Fase S","G2","Profase"], ans:1, exp:"La replicación semiconservativa del ADN ocurre exclusivamente en la Fase S (síntesis) de la interfase. G1 y G2 son fases de crecimiento y preparación." },
+    { u:"VIII", q:"¿Qué evento ocurre EXCLUSIVAMENTE en la meiosis y NO en la mitosis?", opts:["Condensación de cromosomas","Formación del huso","Crossing over entre homólogos","Citocinesis"], ans:2, exp:"El crossing over (recombinación genética) ocurre solo en la profase I de la meiosis. Los cromosomas homólogos se aparean e intercambian segmentos, generando variabilidad genética." },
+    // UNIDAD IX
+    { u:"IX", q:"En el cruce Aa × Aa, ¿qué proporción de la descendencia tendrá fenotipo recesivo?", opts:["0%","25%","50%","75%"], ans:1, exp:"Aa × Aa → Punnett: AA (25%), Aa (50%), aa (25%). Solo el 25% (aa) expresa el fenotipo recesivo. El 75% restante (AA + Aa) expresa el fenotipo dominante." },
+    { u:"IX", q:"¿En qué proceso celular se basa directamente el principio de segregación de Mendel?", opts:["Mitosis","Replicación del ADN","Meiosis","Traducción"], ans:2, exp:"La meiosis es la base del principio de segregación: en anafase I los cromosomas homólogos se separan, y cada gameto recibe solo uno de los dos alelos del par." },
+  ],
+  desarrollo: [
+    { u:"I", q:"Explicá por qué los virus NO son considerados seres vivos. Mencioná al menos 3 razones y nombrá 2 virus de importancia veterinaria.", tipo:"desarrollo" },
+    { u:"I", q:"Describí la organización biológica jerárquica desde el nivel atómico hasta el nivel ecosistema. Indicá en qué nivel trabaja principalmente un médico veterinario en la clínica.", tipo:"desarrollo" },
+    { u:"II", q:"Comparás los carbohidratos glucógeno, almidón y celulosa: ¿en qué organismos se encuentran, cuál es su función y por qué los mamíferos no pueden digerir la celulosa sin ayuda microbiana?", tipo:"desarrollo" },
+    { u:"II", q:"Explicá la estructura de las proteínas (4 niveles) y describí qué es la desnaturalización. ¿Qué importancia tiene este concepto en la esterilización de instrumental veterinario?", tipo:"desarrollo" },
+    { u:"III", q:"Describí las diferencias estructurales entre la célula animal y la célula vegetal. ¿Por qué es importante conocer estas diferencias para comprender las toxicosis por plantas en animales domésticos?", tipo:"desarrollo" },
+    { u:"IV", q:"Explicá los tres tipos de transporte a través de la membrana (difusión simple, facilitada y activo) indicando para cada uno: si requiere proteína, si requiere ATP, y un ejemplo específico con relevancia veterinaria.", tipo:"desarrollo" },
+    { u:"V", q:"Diferenciá catabolismo de anabolismo con ejemplos de cada uno. Explicá el papel de las enzimas en ambos procesos y cómo la temperatura y el pH afectan su actividad.", tipo:"desarrollo" },
+    { u:"VI", q:"Describí las 3 etapas de la respiración aeróbica (glucólisis, ciclo de Krebs, cadena respiratoria) indicando en cada una: dónde ocurre en la célula, qué se consume y qué se produce. Compará el rendimiento energético con la respiración anaeróbica.", tipo:"desarrollo" },
+    { u:"VI", q:"¿Qué es la fermentación láctica? ¿En qué condiciones ocurre y qué consecuencias tiene en el organismo animal? Relacioná con la acidosis láctica en bovinos.", tipo:"desarrollo" },
+    { u:"VII", q:"Compará la fotosíntesis y la respiración celular indicando: dónde ocurren, qué consumen, qué producen y por qué se consideran procesos complementarios e inversos.", tipo:"desarrollo" },
+    { u:"VIII", q:"Explicá las diferencias entre mitosis y meiosis en cuanto a: número de divisiones, células producidas, ploidía resultante, presencia de crossing over y función biológica de cada proceso.", tipo:"desarrollo" },
+    { u:"VIII", q:"Describí las fases de la mitosis (profase, metafase, anafase, telofase) explicando qué ocurre con los cromosomas y el huso mitótico en cada una.", tipo:"desarrollo" },
+    { u:"IX", q:"Explicá el principio de segregación de Mendel y resolvé el siguiente cruce: un toro de genotipo Aa se cruza con una vaca de genotipo Aa. ¿Qué proporción genotípica y fenotípica se espera en la descendencia? Usá el cuadro de Punnett.", tipo:"desarrollo" },
+    { u:"IX", q:"¿Qué es el freemartinismo bovino? Explicá el mecanismo genético y fisiológico que lo produce y su importancia en la producción animal.", tipo:"desarrollo" },
+    { u:"I-IX", q:"Integrá los conocimientos de toda la materia: explicá cómo la célula obtiene energía (desde la glucosa hasta el ATP), cómo usa esa energía para sintetizar proteínas, y cómo la información genética (ADN → ARN → proteína) hace posible todo el proceso. Relacioná con al menos una aplicación veterinaria.", tipo:"desarrollo" },
+  ]
+};
+
+let EX = { started:false, answers:{}, devAnswers:{}, submitted:false, score:0 };
+
+function renderExamen(c, u){
+  if(!EX.started){
+    c.innerHTML = `<div class="anim">
+      <div style="background:var(--card);border-radius:var(--rlg);border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow)">
+        <div style="background:#085041;padding:20px 22px">
+          <h2 style="font-family:var(--fdisp);font-size:20px;color:#fff;font-weight:400;margin-bottom:4px">📋 ${EXAMEN.titulo}</h2>
+          <p style="font-size:12px;color:rgba(255,255,255,0.65)">${EXAMEN.subtitulo}</p>
+        </div>
+        <div style="padding:20px 22px">
+          <div style="background:var(--gl);border-radius:var(--r);padding:12px 14px;margin-bottom:18px;border-left:3px solid var(--green)">
+            <p style="font-size:12px;color:var(--gd);line-height:1.6">${EXAMEN.instrucciones}</p>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-bottom:20px">
+            <div style="background:var(--bg);border-radius:var(--rsm);padding:12px;text-align:center">
+              <div style="font-size:22px;font-weight:500;color:var(--gd)">35</div>
+              <div style="font-size:10px;color:var(--ts)">Múltiple opción</div>
+            </div>
+            <div style="background:var(--bg);border-radius:var(--rsm);padding:12px;text-align:center">
+              <div style="font-size:22px;font-weight:500;color:var(--ad)">15</div>
+              <div style="font-size:10px;color:var(--ts)">Preguntas a desarrollar</div>
+            </div>
+            <div style="background:var(--bg);border-radius:var(--rsm);padding:12px;text-align:center">
+              <div style="font-size:22px;font-weight:500;color:var(--pd)">9</div>
+              <div style="font-size:10px;color:var(--ts)">Unidades cubiertas</div>
+            </div>
+            <div style="background:var(--bg);border-radius:var(--rsm);padding:12px;text-align:center">
+              <div style="font-size:22px;font-weight:500;color:var(--bd)">65</div>
+              <div style="font-size:10px;color:var(--ts)">Puntos totales</div>
+            </div>
+          </div>
+          <button onclick="startExamen()" style="width:100%;padding:13px;border-radius:var(--r);border:none;background:#085041;color:#fff;font-size:14px;font-weight:500;cursor:pointer;font-family:var(--font)">Comenzar examen →</button>
+        </div>
+      </div>
+    </div>`;
+    return;
+  }
+  if(EX.submitted){ renderResultado(c); return; }
+  renderExamenForm(c);
+}
+
+function startExamen(){
+  EX = { started:true, answers:{}, devAnswers:{}, submitted:false, score:0 };
+  renderExamenForm(document.getElementById('tab-content'));
+}
+
+function renderExamenForm(c){
+  const total = EXAMEN.multiple.length + EXAMEN.desarrollo.length;
+  const answered = Object.keys(EX.answers).length + Object.values(EX.devAnswers).filter(v=>v&&v.trim().length>10).length;
+  const pct = Math.round(answered/total*100);
+
+  c.innerHTML = `<div class="anim">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+      <div>
+        <strong style="font-size:13px">📋 Examen Final — Biología Celular</strong>
+        <span class="chip chip-g" style="margin-left:8px">${answered}/${total} respondidas</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:7px">
+        <div style="width:100px;height:5px;background:#eee;border-radius:4px;overflow:hidden"><div style="height:100%;width:${pct}%;background:var(--green);border-radius:4px;transition:width 0.4s"></div></div>
+        <span style="font-size:11px;color:var(--ts)">${pct}%</span>
+      </div>
+    </div>
+
+    <div style="background:var(--gl);border-left:3px solid var(--green);padding:9px 12px;border-radius:0 var(--rsm) var(--rsm) 0;margin-bottom:18px">
+      <p style="font-size:11px;font-weight:500;color:var(--gd)">PARTE A — Múltiple opción <span style="font-weight:400;opacity:0.8">(35 preguntas · 1 punto cada una)</span></p>
+    </div>
+
+    ${EXAMEN.multiple.map((q,i)=>`
+      <div id="eq${i}" style="background:var(--card);border:1px solid ${EX.answers[i]!==undefined?'var(--green)':'var(--border)'};border-radius:var(--r);padding:14px;margin-bottom:10px;transition:border-color 0.2s">
+        <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:10px">
+          <span style="background:${EX.answers[i]!==undefined?'var(--green)':'#085041'};color:#fff;font-size:10px;font-weight:500;padding:2px 7px;border-radius:8px;flex-shrink:0;margin-top:1px">${i+1}</span>
+          <span style="background:var(--gl);color:var(--gd);font-size:9px;padding:2px 6px;border-radius:6px;flex-shrink:0;margin-top:1px">U${q.u}</span>
+          <p style="font-size:12px;font-weight:500;line-height:1.5;margin:0">${q.q}</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:5px">
+          ${q.opts.map((o,oi)=>`
+            <label style="display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:var(--rsm);border:1px solid ${EX.answers[i]===oi?'var(--green)':'var(--border)'};background:${EX.answers[i]===oi?'var(--gl)':'var(--bg)'};cursor:pointer;transition:all 0.15s">
+              <input type="radio" name="q${i}" value="${oi}" ${EX.answers[i]===oi?'checked':''} onchange="selectAnswer(${i},${oi})" style="accent-color:var(--green);flex-shrink:0">
+              <span style="font-size:11px;color:${EX.answers[i]===oi?'var(--gd)':'var(--text)'}">${String.fromCharCode(65+oi)}. ${o}</span>
+            </label>`).join('')}
+        </div>
+      </div>`).join('')}
+
+    <div style="background:var(--al);border-left:3px solid var(--amber);padding:9px 12px;border-radius:0 var(--rsm) var(--rsm) 0;margin:22px 0 16px">
+      <p style="font-size:11px;font-weight:500;color:var(--ad)">PARTE B — Preguntas a desarrollar <span style="font-weight:400;opacity:0.8">(15 preguntas · 2 puntos cada una)</span></p>
+    </div>
+
+    ${EXAMEN.desarrollo.map((q,i)=>`
+      <div style="background:var(--card);border:1px solid ${EX.devAnswers[i]&&EX.devAnswers[i].trim().length>10?'var(--amber)':'var(--border)'};border-radius:var(--r);padding:14px;margin-bottom:10px;transition:border-color 0.2s">
+        <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:10px">
+          <span style="background:#085041;color:#fff;font-size:10px;font-weight:500;padding:2px 7px;border-radius:8px;flex-shrink:0;margin-top:1px">${EXAMEN.multiple.length+i+1}</span>
+          <span style="background:var(--al);color:var(--ad);font-size:9px;padding:2px 6px;border-radius:6px;flex-shrink:0;margin-top:1px">U${q.u}</span>
+          <p style="font-size:12px;font-weight:500;line-height:1.5;margin:0">${q.q}</p>
+        </div>
+        <textarea
+          placeholder="Escribí tu respuesta acá..."
+          style="width:100%;height:90px;font-size:11px;padding:9px;border:1px solid var(--border);border-radius:var(--rsm);background:var(--bg);color:var(--text);resize:vertical;font-family:var(--font);line-height:1.55"
+          oninput="saveDevAnswer(${i}, this.value)"
+        >${EX.devAnswers[i]||''}</textarea>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:5px">
+          <span style="font-size:10px;color:var(--ts)">${(EX.devAnswers[i]||'').trim().split(/\s+/).filter(Boolean).length} palabras</span>
+          ${EX.devAnswers[i]&&EX.devAnswers[i].trim().length>10?`<span style="font-size:10px;color:var(--gd)">✓ Respondida</span>`:`<span style="font-size:10px;color:var(--ts)">Pendiente</span>`}
+        </div>
+      </div>`).join('')}
+
+    <div style="margin-top:20px;padding:16px;background:var(--bg);border-radius:var(--r);border:1px solid var(--border)">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+        <div>
+          <p style="font-size:12px;font-weight:500;color:var(--text)">Progreso: ${answered} de ${total} respondidas</p>
+          <p style="font-size:11px;color:var(--ts)">Múltiple opción: ${Object.keys(EX.answers).length}/35 · Desarrollo: ${Object.values(EX.devAnswers).filter(v=>v&&v.trim().length>10).length}/15</p>
+        </div>
+        <button onclick="submitExamen()" style="padding:10px 22px;border-radius:var(--r);border:none;background:#085041;color:#fff;font-size:13px;font-weight:500;cursor:pointer;font-family:var(--font)">Entregar examen →</button>
+      </div>
+      ${answered<total?`<p style="font-size:11px;color:var(--ts)">⚠️ Podés entregar con preguntas sin responder, pero te recomendamos completar todo el examen.</p>`:''}
+    </div>
+  </div>`;
+}
+
+function selectAnswer(qi, oi){
+  EX.answers[qi] = oi;
+  const card = document.getElementById('eq'+qi);
+  if(card){
+    card.style.borderColor = 'var(--green)';
+    const num = card.querySelector('span');
+    if(num) num.style.background = 'var(--green)';
+  }
+  const total = EXAMEN.multiple.length + EXAMEN.desarrollo.length;
+  const answered = Object.keys(EX.answers).length + Object.values(EX.devAnswers).filter(v=>v&&v.trim().length>10).length;
+  const pct = Math.round(answered/total*100);
+  const bar = document.querySelector('.anim > div > div > div > div[style*="width:"]');
+  if(bar) bar.style.width = pct+'%';
+}
+
+function saveDevAnswer(i, val){
+  EX.devAnswers[i] = val;
+}
+
+function submitExamen(){
+  let score = 0;
+  EXAMEN.multiple.forEach((q,i)=>{ if(EX.answers[i]===q.ans) score++; });
+  EX.score = score;
+  EX.submitted = true;
+  renderResultado(document.getElementById('tab-content'));
+}
+
+function renderResultado(c){
+  const total35 = EXAMEN.multiple.length;
+  const correctas = EX.score;
+  const devRespondidas = Object.values(EX.devAnswers).filter(v=>v&&v.trim().length>10).length;
+  const pct = Math.round(correctas/total35*100);
+  let nota = '';
+  let notaColor = '';
+  let notaMsg = '';
+  if(pct>=90){ nota='Excelente'; notaColor='var(--gd)'; notaMsg='¡Dominás la materia, Marie! 🌟'; }
+  else if(pct>=75){ nota='Muy bien'; notaColor='var(--gd)'; notaMsg='¡Muy buen rendimiento! Repasá los errores.'; }
+  else if(pct>=60){ nota='Bien'; notaColor='var(--ad)'; notaMsg='Buen trabajo. Reforzá los temas con errores.'; }
+  else if(pct>=50){ nota='Regular'; notaColor='var(--amber)'; notaMsg='Necesitás repasar varias unidades.'; }
+  else { nota='Insuficiente'; notaColor='var(--rd)'; notaMsg='Te recomendamos repasar todas las unidades.'; }
+
+  c.innerHTML = `<div class="anim">
+    <div style="background:var(--card);border-radius:var(--rlg);border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow)">
+      <div style="background:#085041;padding:20px 22px;text-align:center">
+        <h2 style="font-family:var(--fdisp);font-size:20px;color:#fff;font-weight:400;margin-bottom:4px">📋 Resultado del examen</h2>
+        <p style="font-size:12px;color:rgba(255,255,255,0.65)">Biología Celular · Prof. Mario Méndez</p>
+      </div>
+      <div style="padding:22px">
+        <div style="text-align:center;margin-bottom:20px">
+          <div style="font-size:52px;font-weight:500;color:${notaColor}">${pct}%</div>
+          <div style="font-size:18px;font-weight:500;color:${notaColor};margin-bottom:4px">${nota}</div>
+          <p style="font-size:12px;color:var(--ts)">${notaMsg}</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:20px">
+          <div style="background:var(--gl);border-radius:var(--rsm);padding:12px;text-align:center">
+            <div style="font-size:20px;font-weight:500;color:var(--gd)">${correctas}/${total35}</div>
+            <div style="font-size:10px;color:var(--ts)">Correctas (múltiple)</div>
+          </div>
+          <div style="background:var(--bg);border-radius:var(--rsm);padding:12px;text-align:center">
+            <div style="font-size:20px;font-weight:500;color:var(--ad)">${total35-correctas}/${total35}</div>
+            <div style="font-size:10px;color:var(--ts)">Incorrectas</div>
+          </div>
+          <div style="background:var(--al);border-radius:var(--rsm);padding:12px;text-align:center">
+            <div style="font-size:20px;font-weight:500;color:var(--ad)">${devRespondidas}/15</div>
+            <div style="font-size:10px;color:var(--ts)">Desarrollo respondidas</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:18px">
+          <p style="font-size:11px;font-weight:500;color:var(--text);margin-bottom:10px">Revisión — Múltiple opción:</p>
+          ${EXAMEN.multiple.map((q,i)=>{
+            const sel = EX.answers[i];
+            const ok = sel===q.ans;
+            return `<div style="padding:9px 12px;border-radius:var(--rsm);border:1px solid ${ok?'var(--green)':'var(--red)'};background:${ok?'var(--gl)':'var(--rl)'};margin-bottom:6px">
+              <div style="display:flex;gap:7px;align-items:flex-start">
+                <span style="font-size:12px;flex-shrink:0">${ok?'✓':'✗'}</span>
+                <div style="flex:1">
+                  <p style="font-size:11px;font-weight:500;color:${ok?'var(--gd)':'var(--rd)'};margin-bottom:3px">P${i+1} (U${q.u}): ${q.q}</p>
+                  ${!ok?`<p style="font-size:10px;color:var(--rd);margin-bottom:2px">Tu respuesta: ${sel!==undefined?q.opts[sel]:'Sin responder'}</p>`:''}
+                  <p style="font-size:10px;color:${ok?'var(--gm)':'var(--rd)'}">Correcta: ${q.opts[q.ans]}</p>
+                  ${!ok?`<p style="font-size:10px;color:var(--ts);margin-top:3px;font-style:italic">${q.exp}</p>`:''}
+                </div>
+              </div>
+            </div>`;
+          }).join('')}
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button onclick="resetExamen()" style="flex:1;padding:10px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:12px;cursor:pointer;font-family:var(--font)">Hacer de nuevo</button>
+          <button onclick="EX.submitted=false;renderExamenForm(document.getElementById('tab-content'))" style="flex:1;padding:10px;border-radius:var(--r);border:none;background:#085041;color:#fff;font-size:12px;cursor:pointer;font-family:var(--font)">Ver mis respuestas</button>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function resetExamen(){
+  EX = { started:false, answers:{}, devAnswers:{}, submitted:false, score:0 };
+  renderExamen(document.getElementById('tab-content'), S.mat?.data[S.ui]);
+}
 
 // ── QUIZ ──
 function renderQuiz(c,u){
